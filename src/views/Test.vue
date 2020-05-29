@@ -45,7 +45,7 @@
 </template>
 
 <script>
-console.clear();
+// console.clear();
 // @ is an alias to /src
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
@@ -225,7 +225,8 @@ export default {
 
       this.renderer.setClearColor(0x101010);
       // this.renderer.setPixelRatio(window.devicePixelRatio);
-      this.renderer.setSize(window.innerWidth, window.innerHeight);
+      // this.renderer.setSize(window.innerWidth, window.innerHeight);
+      this.renderer.setSize(800 ,800);
       container.appendChild(this.renderer.domElement);
 
       // let orbit = new THREE.OrbitControls(this.camera, this.renderer.domElement);
@@ -409,20 +410,15 @@ export default {
   color: #fff;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #000;
-}
-body {
-  color: #ffffff;
   font-family: Monospace;
   font-size: 13px;
   text-align: center;
   font-weight: normal;
-
-  background-color: #000000;
-  margin: 0px;
   overflow: hidden;
+
 }
 #info {
   position: absolute;

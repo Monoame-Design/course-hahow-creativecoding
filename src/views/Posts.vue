@@ -5,13 +5,12 @@
       <div class="post-wrapper" v-for="(item, index) in posts" :key="index">
         <div class="post-content">
           <div class="post-title">{{ item.title.rendered }}</div>
-          <div class="post-preview">
-            {{ getPreview(item.excerpt.rendered) }}
-          </div>
+          <div class="post-preview">{{ getPreview(item.excerpt.rendered) }}</div>
         </div>
-        <div class="post-image">
-          <img :src="item._embedded['wp:featuredmedia'][0].source_url" alt />
-        </div>
+        <div
+          class="post-image"
+          :style="`background-image: url('${item._embedded['wp:featuredmedia'][0].source_url}');`"
+        ></div>
       </div>
     </div>
   </div>
@@ -19,7 +18,7 @@
 
 <script>
 export default {
-  name: "Post",
+  name: "Posts",
   components: {},
   data() {
     return {
@@ -29,6 +28,9 @@ export default {
   methods: {
     getPreview(excerpt) {
       return excerpt.substring(3, excerpt.length - 16) + "...";
+    },
+    mdToHTML(md) {
+      return markdown.toHTML(this.md);
     }
   },
   created() {},
@@ -43,9 +45,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/assets/css/style.scss";
+
 .posts {
   .post-list {
-    padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -54,15 +57,17 @@ export default {
   }
   .post-wrapper {
     display: flex;
+    border: solid 1px $white;
     flex-direction: column;
     justify-content: space-between;
-    width: 25vw;
+    width: 100%;
     background-color: #000;
-    margin: 0 20px 20px 20px;
+    margin: 20px 0;
     padding: 20px;
     color: #fff;
+    overflow: hidden;
     @media screen and (max-width: 768px) {
-      width: 80vw;
+      width: 100%;
     }
     .post-title {
       text-align: left;
@@ -76,8 +81,28 @@ export default {
       margin: 15px 0;
     }
   }
-  .post-image img {
-    width: 100%;
+  .post-image {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+    mix-blend-mode: luminosity;
+    &:hover {
+      background-size: 80% auto;
+      mix-blend-mode: normal;
+      transition: 1s;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+      background-size: 100% auto;
+      &:hover {
+        background-size: 120% auto;
+      }
+    }
   }
 }
 </style>
