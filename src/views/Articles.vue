@@ -1,16 +1,21 @@
 <template>
   <div class="posts">
     <h1>Tutorials</h1>
-    <div class="post-list">
+    <div class="post-list" v-if="!$route.params.id">
       <div class="post-wrapper" v-for="(item, index) in posts" :key="index">
         <div class="post-content">
           <div class="post-title">{{ item.title.rendered }}</div>
-          <div class="post-preview">{{ getPreview(item.excerpt.rendered) }}</div>
+          <div class="post-preview">
+            {{ getPreview(item.excerpt.rendered) }} ...
+            <router-link class="post-read" :to="{ name: 'Article', params: { id: item.id }}">繼續閱讀</router-link>
+          </div>
         </div>
-        <div
-          class="post-image"
-          :style="`background-image: url('${item._embedded['wp:featuredmedia'][0].source_url}');`"
-        ></div>
+        <router-link class="post-read" :to="{ name: 'Article', params: { id: item.id }}">
+          <div
+            class="post-image"
+            :style="`background-image: url('${item._embedded['wp:featuredmedia'][0].source_url}');`"
+          ></div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -27,7 +32,7 @@ export default {
   },
   methods: {
     getPreview(excerpt) {
-      return excerpt.substring(3, excerpt.length - 16) + "...";
+      return excerpt.substring(3, excerpt.length - 16);
     },
     mdToHTML(md) {
       return markdown.toHTML(this.md);
@@ -38,8 +43,10 @@ export default {
     axios
       .get("https://creativecoding.in/wp-json/wp/v2/posts?_embed")
       .then(res => {
+        console.log(res.data);
         this.posts = res.data;
       });
+    // console.log(this.$route.params.id)
   }
 };
 </script>
@@ -79,6 +86,11 @@ export default {
       text-align-last: left;
       font-size: 14px;
       margin: 15px 0;
+    }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
     }
   }
   .post-image {

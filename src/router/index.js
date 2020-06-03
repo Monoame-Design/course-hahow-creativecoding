@@ -1,8 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Posts from "../views/Posts.vue";
+import Articles from "../views/Articles.vue";
+import Article from "../views/Article.vue";
 import Notes from "../views/Notes.vue";
+import Note from "../views/Note.vue";
 import Test from "../views/Test.vue";
 Vue.use(VueRouter);
 
@@ -18,14 +20,24 @@ const routes = [
     component: Test
   },
   {
-    path: "/posts",
-    name: "Posts",
-    component: Posts
+    path: "/articles/:id?",
+    name: "Articles",
+    component: Articles
+  },
+  {
+    path: "/article/:id?",
+    name: "Article",
+    component: Article
   },
   {
     path: "/notes",
     name: "Notes",
     component: Notes
+  },
+  {
+    path: "/notes/:hash",
+    name: "Note",
+    component: Note
   },
   {
     path: "/about",
