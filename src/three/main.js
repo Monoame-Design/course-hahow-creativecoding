@@ -64,6 +64,10 @@ function animate() {
 
 function onWindowResize() {
     three.camera.aspect = window.innerWidth / window.innerHeight;
+    three.camera.left = window.innerWidth / -250
+    three.camera.right = window.innerWidth / 250
+    three.camera.top = window.innerHeight / 250
+    three.camera.bottom = window.innerHeight / -250
     three.camera.updateProjectionMatrix();
     three.renderer.setSize(window.innerWidth, window.innerHeight);
 }

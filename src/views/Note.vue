@@ -26,7 +26,7 @@ export default {
     let hash = this.$route.params.hash;
     if (hash !== "none") {
       axios.get(`https://hackmd.io/@ankycheng/${hash}/download`).then(res => {
-        // console.log(res);
+        console.log(res);
         this.md = res.data;
       });
     } else this.md = "#目前尚無內容";
