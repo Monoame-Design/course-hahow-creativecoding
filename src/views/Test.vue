@@ -12,31 +12,31 @@
         <video autoplay accesskey="0">
           <source
             src="@/assets/image/waves3.ogg"
-            type='video/ogg; codecs="theora, vorbis"'
+            type="video/ogg; codecs='theora, vorbis'"
           />
         </video>
         <video accesskey="1">
           <source
             src="@/assets/image/waves4.ogg"
-            type='video/ogg; codecs="theora, vorbis"'
+            type="video/ogg; codecs='theora, vorbis'"
           />
         </video>
         <video accesskey="2">
           <source
             src="@/assets/image/waves2.ogg"
-            type='video/ogg; codecs="theora, vorbis"'
+            type="video/ogg; codecs='theora, vorbis'"
           />
         </video>
         <video accesskey="3">
           <source
             src="@/assets/image/waves5.ogg"
-            type='video/ogg; codecs="theora, vorbis"'
+            type="video/ogg; codecs='theora, vorbis'"
           />
         </video>
         <video accesskey="4">
           <source
             src="@/assets/image/waves6.ogg"
-            type='video/ogg; codecs="theora, vorbis"'
+            type="video/ogg; codecs='theora, vorbis'"
           />
         </video>
       </div>
@@ -226,7 +226,7 @@ export default {
       this.renderer.setClearColor(0x101010);
       // this.renderer.setPixelRatio(window.devicePixelRatio);
       // this.renderer.setSize(window.innerWidth, window.innerHeight);
-      this.renderer.setSize(800 ,800);
+      this.renderer.setSize(800, 800);
       container.appendChild(this.renderer.domElement);
 
       // let orbit = new THREE.OrbitControls(this.camera, this.renderer.domElement);
@@ -418,7 +418,6 @@ export default {
   text-align: center;
   font-weight: normal;
   overflow: hidden;
-
 }
 #info {
   position: absolute;

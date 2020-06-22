@@ -35,7 +35,7 @@ const routes = [
     component: Notes
   },
   {
-    path: "/notes/:hash",
+    path: "/note/:hash",
     name: "Note",
     component: Note
   },

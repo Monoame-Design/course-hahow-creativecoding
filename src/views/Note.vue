@@ -36,10 +36,14 @@ export default {
 
 <style lang="scss">
 .note {
-  .content {
+  .content, p {
     img {
       max-width: 100%;
     }
   }
+}
+
+code {
+  white-space: break-spaces;
 }
 </style>

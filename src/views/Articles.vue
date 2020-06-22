@@ -55,6 +55,10 @@ export default {
 @import "@/assets/css/style.scss";
 
 .posts {
+  pointer-events: none;
+  &>*{
+    pointer-events: auto;
+  }
   .post-list {
     display: flex;
     flex-direction: row;

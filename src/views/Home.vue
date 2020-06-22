@@ -25,7 +25,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  img{
+  img {
     width: 20%;
   }
   h3 {

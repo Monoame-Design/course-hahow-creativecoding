@@ -82,9 +82,18 @@ export default {
         {
           title: "章節 4 - 進階影音互動與即時資料應用",
           content: [
-            ["4-1 - 媒體 - 影像、聲音與影片的整合與拆解", ""],
-            ["1-3 基礎圖形繪製 - 從點線面到塗鴉", ""],
-            ["4-2 - 使用者影音互動 - 即時串流聲音與影片", ""]
+            [
+              "4-1 - 媒體 - 影像、聲音與影片的整合與拆解",
+              "https://hackmd.io/@ankycheng/SyzmSKs2L"
+            ],
+            [
+              "4-2 - 使用者影音互動 - 即時串流聲音與影片",
+              "https://hackmd.io/@ankycheng/Hk77W02nU"
+            ],
+            [
+              "4-3 - 資料視覺化與API - 將資料轉化成藝術",
+              "https://hackmd.io/@ankycheng/r1F86UyTI"
+            ]
           ]
         },
         {
@@ -124,9 +133,17 @@ export default {
 
 <style lang="scss">
 .notes {
-  .md {
+  pointer-events: none;
+  .toc {
+    pointer-events: none;
+    & > * {
+      width: fit-content;
+    }
     img {
       max-width: 100%;
+    }
+    & > * {
+      pointer-events: auto;
     }
   }
 }

@@ -5,6 +5,7 @@ import store from "./store";
 import axios from "axios";
 import "bootstrap"; // Import js file
 import "@/assets/css/style.scss";
+import "@/three/main";
 window.axios = axios;
 Vue.config.productionTip = false;
 
