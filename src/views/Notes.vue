@@ -4,6 +4,15 @@
       .row
         .col-12
           h1 互動藝術程式創作入門 課程筆記
+          br
+          p
+            | 認識程式與互動藝術產業應用，開啟對工程跟設計的想像
+            br
+            | 學會使用 p5.js 開發互動介面，整合繪圖、音訊、視訊、文字、3D、互動與機器創作完整的作品
+            br
+            | 將創作輸出應用在個人品牌或網站、主視覺或海報，甚至互動裝置、遊戲與教材製作等場景，讓你對進修的資源與路線更有方向
+          p Hahow 課程連結：  
+            a(href="https://hahow.in/cr/creative-coding-1") https://hahow.in/cr/creative-coding-1
       .toc
         .topic.p-4.mt-4(v-for='(chapter, index) in toc', :key='index')
           h2 {{ chapter.title }}

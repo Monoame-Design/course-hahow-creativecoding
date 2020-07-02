@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     mdToHTML(md) {
-      return markdown.toHTML(this.md);
+      return markdown.toHTML(this.md).replace(/<a /g,"<a target='_blank' ");
     },
     toggleList() {
       let notesList = this.$refs.notesList;
