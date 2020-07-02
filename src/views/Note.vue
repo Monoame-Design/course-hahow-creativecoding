@@ -1,30 +1,22 @@
-<template>
-  <div class="note-wrapper">
-    <div class="notes-list" ref="notesList">
-      <h6>Table of Contents</h6>
-      <div class="topic" v-for="(item, idx) in index" :key="idx">
-        <div class="topic-title">{{ item.title }}</div>
-        <div
-          class="chapter"
-          v-for="(chapter, chapterNo) in item.content"
-          :key="chapterNo"
-          @click="changeChapter(chapter.hash)"
-        >
-          {{ chapter.title }}
-          <!--<router-link  :to="{ name: 'Note', params: { hash: chapter.hash } }">{{ chapter.title }}</router-link>-->
-        </div>
-        <div class="toggl-list" @click="toggleList">=</div>
-      </div>
-    </div>
-    <div class="back">
-      <router-link :to="{ name: 'Notes', params: { } }">< Back</router-link>
-    </div>
-    <div class="prev switch-page" v-if="prev" @click="changeChapter(prev.hash)"><</div>
-    <div class="next switch-page" v-if="next" @click="changeChapter(next.hash)">></div>
-    <div class="note">
-      <div class="content" v-html="mdToHTML(md)"></div>
-    </div>
-  </div>
+<template lang="pug">
+  .page.page-note.pt-5.pb-5
+    .container.pt-3.pb-5.animated.fadeIn
+      .note-wrapper
+        .notes-list(ref='notesList')
+          h6 Table of Contents
+          .topic(v-for='(item, idx) in index' :key='idx')
+            .topic-title {{ item.title }}
+            .chapter(v-for='(chapter, chapterNo) in item.content' :key='chapterNo' @click='changeChapter(chapter.hash)')
+              | {{ chapter.title }}
+              // <router-link  :to="{ name: 'Note', params: { hash: chapter.hash } }">{{ chapter.title }}</router-link>
+            .toggl-list(@click='toggleList') =
+        .back
+          router-link(:to="{ name: 'Notes', params: { } }") &lt; Back
+        .prev.switch-page(v-if='prev' @click='changeChapter(prev.hash)') &lt;
+        .next.switch-page(v-if='next' @click='changeChapter(next.hash)') &gt;
+        .note
+          .content(v-html='mdToHTML(md)')
+
 </template>
 
 <script>
@@ -77,6 +69,11 @@ export default {
         } else {
           this.next = this.chapterList[this.chapterNo + 1];
         }
+        // this.$nextTick(()=>{
+        //   document.querySelectorAll('note-wrapper').forEach((block) => {
+        //     hljs.highlightBlock(block);
+        //   });
+        // })
       });
     },
     changeChapter(hash) {
@@ -112,10 +109,10 @@ export default {
 
 <style lang="scss">
 .note-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   pointer-events: none;
   & > * {
     pointer-events: auto;
@@ -249,25 +246,59 @@ export default {
 }
 
 .note {
-  margin-top: 100px;
-  max-width: 700px;
-  width: 95%;
   overflow-wrap: break-word;
   .content,
   p {
     img {
       max-width: 100%;
+      min-width: 50%;
       display: block;
     }
     hr {
       margin: 25px 0;
     }
   }
+  h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  h2{
+    font-size: 2rem;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(white,0.5);
+    margin-bottom: 20px;
+
+  }
+  h3{
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+  h4{
+    margin-top: 15px;
+  }
+  p,li{
+    letter-spacing: 0.02em;
+    line-height: 1.85;
+  }
+  img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  a{
+    color: #ff6363;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+
 }
 
 @media (max-width: 768px) {
   .note {
-    margin: 100px 200px 0px 200px;
+    margin: 40px 0px 0px 40px;
     max-width: 70vw;
   }
   .back {
@@ -293,9 +324,5 @@ export default {
       right: 10px;
     }
   }
-}
-
-code {
-  white-space: break-spaces;
 }
 </style>

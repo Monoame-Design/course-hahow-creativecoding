@@ -1,25 +1,21 @@
-<template>
-  <div class="notes">
-    <h1>互動藝術程式創作入門</h1>
-    <div class="toc">
-      <div class="topic" v-for="(chapter, index) in toc" :key="index">
-        <h2>{{ chapter.title }}</h2>
-        <div class="chapters">
-          <router-link
-            class="chapter"
-            v-for="(section, index) in chapter.content"
-            :key="index + '_'"
-            :to="{ name: 'Note', params: { hash: getHash(section['link']) } }"
-          >
-            <div class="bkg" :style="{'background-image': 'url(' + section.image + ')'}"></div>
-            <!--<div class="bkg" :style="{'background-image': 'url(' + getThumbnail() + ')'}"></div>-->
-            <h2>{{ "章節" + section["chapterNo"] }}</h2>
-            <h4>{{ section["title"] }}</h4>
-          </router-link>
-        </div>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+  .page.page-notes.pt-5.pb-5
+    .container
+      .row
+        .col-12
+          h1 互動藝術程式創作入門 課程筆記
+      .toc
+        .topic.p-4.mt-4(v-for='(chapter, index) in toc', :key='index')
+          h2 {{ chapter.title }}
+          .row.chapters
+            router-link.chapter.col-md-6.col-sm-12.p-2.mt-1.animated.fadeIn(
+              v-for='(section, index) in chapter.content', :key="index + '_'", 
+              :to="{ name: 'Note', params: { hash: getHash(section['link']) } }")
+              .inner-chapter.p-3
+                .bkg(:style="{'background-image': 'url(' + section.image + ')'}")
+                h2 {{ "Chapter " + section["chapterNo"] }}
+                h4 {{ section["title"] }}
+
 </template>
 
 <script>
@@ -1463,94 +1459,98 @@ export default {
 </script>
 
 <style lang="scss">
-.notes {
-  pointer-events: none;
-  .toc {
-    pointer-events: none;
-    ul {
-      list-style: none;
-    }
-    .topic {
-      width: 100%;
-      overflow: scroll;
-    }
-    .chapters {
-      width: 100%;
-      overflow: scroll;
+.page-notes {
+  ul {
+    list-style: none;
+  }
+  .topic {
+    width: 100%;
+    overflow: auto;
+    border: solid 1px rgba(white,0.5);
+    background-color: rgba(white,0.01);
+    border-radius: 5px;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .chapters {
+    position: relative;
+    .inner-chapter {
       position: relative;
+      min-height: 250px;
+      border-radius: 5px;
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      .chapter {
-        position: relative;
-        min-width: 300px;
-        width: 300px;
-        height: 250px;
-        margin: 20px;
-        padding: 10px;
-        // border: solid 1px white;
-        border-radius: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        color: white;
-        overflow: hidden;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+      overflow: hidden;
+      border: solid 1px rgba(white,0.2);
+      text-shadow: 0px 0px 20px rgba(black,0.7);
+      &:hover {
+        text-decoration: none;
+        background-size: 120%;
+        transition-duration: 1s;
+      }
+      .bkg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.5s;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
         &:hover {
           text-decoration-line: none;
-          background-size: 120%;
-          transition-duration: 1s;
+          transform: scale(1.2);
+          transition-duration: 0.5s;
+          text-decoration: none;
         }
-        .bkg {
-          position: absolute;
-          top: 0;
-          left: 0;
+        &::after {
+          content: "";
           width: 100%;
           height: 100%;
-          transition-duration: 0.5s;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          &:hover {
-            text-decoration-line: none;
-            transform: scale(1.3);
-            transition-duration: 0.5s;
-          }
-          &::after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            border-radius: 5%;
-            background-color: black;
-            opacity: 0.5;
-            // transition-duration: 0.5s;
-            transition: opacity 0.4s ease-in;
-            z-index: 2;
-          }
-          &:hover::after {
-            opacity: 0;
-            transition: opacity 0.4s ease-in;
-          }
+          position: absolute;
+          left: 0;
+          top: 0;
+          background-color: rgba(black,0.2);
+          transition: opacity 0.4s ease-in;
+          z-index: 2;
+          pointer-events: none;
         }
-        h2,
-        h4 {
-          z-index: 5;
+        &:hover::after {
+          opacity: 0;
+          transition: opacity 0.4s ease-in;
         }
       }
-    }
-    & > * {
-      width: fit-content;
-    }
-    img {
-      max-width: 100%;
-    }
-    & > * {
-      pointer-events: auto;
+      h2,
+      h4 {
+        z-index: 5;
+      }
+      h2{
+        font-weight: 700;
+      }
+      h4{
+        background-color: black;
+        padding: 5px;
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
     }
   }
+  & > * {
+    width: fit-content;
+  }
+  img {
+    max-width: 100%;
+  }
+  & > * {
+    pointer-events: auto;
+  }
 }
+
 
 @media (max-width: 768px) {
   .notes {

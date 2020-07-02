@@ -1,13 +1,17 @@
-<template>
-  <div id="app" class="container">
-    <!--<div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/test">Test</router-link>|
-      <router-link to="/articles">Articles</router-link>|
-      <router-link to="/notes">Notes</router-link>
-    </div>-->
-    <router-view />
-  </div>
+<template lang="pug">
+  #app
+    .container
+      //#nav.p-2
+        router-link(to='/') 首頁
+        router-link(to='/test') Test
+        router-link(to='/articles') Articles
+        router-link.ml-5(to='/notes') 課程筆記
+    router-view
+    footer.pt-5.pb-3
+      .container
+        .row
+          .col-12
+            p Copyright © 2020 Monoame Studio 墨雨設計 版權所有
 </template>
 
 <style lang="scss">
@@ -18,6 +22,7 @@ body {
   padding: 0;
   margin: 0;
   pointer-events: none;
+  font-size: 17px;
 }
 
 #app {
@@ -28,17 +33,21 @@ body {
 }
 
 #nav {
-  padding: 30px;
+
   pointer-events: auto;
   a {
     font-weight: bold;
     color: $white;
     &.router-link-exact-active {
-      color: #42b983;
+      color: #fa434f;
     }
   }
 }
 
+.container{
+  // max-width: 1200px;
+
+}
 canvas {
   position: fixed;
   left: 0;
