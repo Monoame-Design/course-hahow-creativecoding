@@ -50,6 +50,14 @@ export default {
     },
     toggleList() {
       let notesList = this.$refs.notesList;
+
+      if (notesList.classList.contains("list-active")){
+        notesList.style.left = "-290px";
+      }else{
+        notesList.style.left = "-10px";
+      }
+        
+
       notesList.classList.contains("list-active")
         ? notesList.classList.remove("list-active")
         : notesList.classList.add("list-active");
@@ -171,7 +179,7 @@ export default {
   font-weight: bold;
   top: 50%;
   transition: 0.5s;
-  &:hover{
+  &:hover {
     transform: scale(1.5);
     transition: 0.5s;
   }
@@ -241,14 +249,48 @@ export default {
 }
 
 .note {
+  margin-top: 100px;
   max-width: 700px;
+  width: 95%;
+  overflow-wrap: break-word;
   .content,
   p {
     img {
       max-width: 100%;
+      display: block;
     }
     hr {
       margin: 25px 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .note {
+    margin: 100px 200px 0px 200px;
+    max-width: 70vw;
+  }
+  .back {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  .switch-page {
+    cursor: pointer;
+    position: fixed;
+    font-size: 48px;
+    font-weight: bold;
+    top: 20%;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &.prev {
+      left: 10px;
+    }
+    &.next {
+      right: 10px;
     }
   }
 }

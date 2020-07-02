@@ -11,7 +11,8 @@
             :key="index + '_'"
             :to="{ name: 'Note', params: { hash: getHash(section['link']) } }"
           >
-            <div class="bkg" :style="{'background-image': 'url(' + getThumbnail() + ')'}"></div>
+            <div class="bkg" :style="{'background-image': 'url(' + section.image + ')'}"></div>
+            <!--<div class="bkg" :style="{'background-image': 'url(' + getThumbnail() + ')'}"></div>-->
             <h2>{{ "章節" + section["chapterNo"] }}</h2>
             <h4>{{ section["title"] }}</h4>
           </router-link>
@@ -1547,6 +1548,25 @@ export default {
     }
     & > * {
       pointer-events: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .notes {
+    .toc {
+      h2 {
+        font-size: calc(12px + 3vw);
+      }
+      h4 {
+        font-size: calc(8px + 3vw);
+      }
+      .chapters {
+        flex-direction: column;
+        .chapter {
+          min-width: 90%;
+        }
+      }
     }
   }
 }
