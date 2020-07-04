@@ -1,6 +1,6 @@
 <template lang="pug">
   .page.page-note.pt-5.pb-5
-    .container.pt-3.pb-5.animated.fadeIn
+    .container.pt-3.pb-5
       .note-wrapper
         .notes-list(ref='notesList')
           h6 Table of Contents
@@ -11,10 +11,17 @@
               // <router-link  :to="{ name: 'Note', params: { hash: chapter.hash } }">{{ chapter.title }}</router-link>
             .toggl-list(@click='toggleList') =
         .back
-          router-link(:to="{ name: 'Notes', params: { } }") &lt; Back
-        .prev.switch-page(v-if='prev' @click='changeChapter(prev.hash)') &lt;
-        .next.switch-page(v-if='next' @click='changeChapter(next.hash)') &gt;
-        .note
+          router-link(:to="{ name: 'Notes', params: { } }")
+            i.fas.fa-angle-left
+            |   Back
+          
+        router-link.prev.switch-page(v-if='prev', 
+        :to="{ name: 'NoteChap', params: { chapterNo: prev.chapterNo } }" )
+          i.fas.fa-angle-left
+        router-link.next.switch-page(v-if='prev', 
+        :to="{ name: 'NoteChap', params: { chapterNo: next.chapterNo } }" )
+          i.fas.fa-angle-right
+        .note.animate__animated.animate__fadeIn
           .content(v-html='mdToHTML(md)')
 
 </template>
@@ -101,10 +108,10 @@ export default {
         })
       });
     },
-    changeChapter(hash) {
-      if (this.$route.params.hash === hash) return;
-      this.$router.push({ name: "Note", params: { hash: hash } });
-      this.updateContent(hash);
+    changeChapter(chapNo) {
+      if (this.$route.params.chapNo === chapNo) return;
+      this.$router.push({ name: "NoteChap", params: { chapNo: chapNo } });
+      // this.updateContent(hash);
     },
     setChapterList() {
       let chapters = [];

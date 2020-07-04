@@ -6,7 +6,7 @@
         router-link(to='/test') Test
         router-link(to='/articles') Articles
         router-link.ml-5(to='/notes') 課程筆記
-    router-view
+    router-view(:key="$route.path")
     //footer.pt-5.pb-3
       .container
         .row

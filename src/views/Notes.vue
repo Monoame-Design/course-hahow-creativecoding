@@ -18,7 +18,7 @@
         .topic.p-4.mt-4(v-for='(chapter, index) in toc', :key='index')
           h2 {{ chapter.title }}
           .row.chapters
-            router-link.chapter.col-md-6.col-sm-12.p-2.mt-1.animated.fadeIn(
+            router-link.chapter.col-md-6.col-sm-12.p-2.mt-1.animate__animated.animate__fadeIn(
               v-for='(section, index) in chapter.content', :key="index + '_'", 
               :to="{ name: 'NoteChap', params: { chapterNo: section['chapterNo'], hash: getHash(section['link']) } }")
               .inner-chapter.p-3
