@@ -7,7 +7,7 @@
         router-link(to='/articles') Articles
         router-link.ml-5(to='/notes') 課程筆記
     router-view
-    footer.pt-5.pb-3
+    //footer.pt-5.pb-3
       .container
         .row
           .col-12

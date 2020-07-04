@@ -13,13 +13,14 @@
             | 將創作輸出應用在個人品牌或網站、主視覺或海報，甚至互動裝置、遊戲與教材製作等場景，讓你對進修的資源與路線更有方向
           p Hahow 課程連結：  
             a(href="https://hahow.in/cr/creative-coding-1") https://hahow.in/cr/creative-coding-1
+          p 聯繫我們： monoamestudio@gmail.com
       .toc
         .topic.p-4.mt-4(v-for='(chapter, index) in toc', :key='index')
           h2 {{ chapter.title }}
           .row.chapters
             router-link.chapter.col-md-6.col-sm-12.p-2.mt-1.animated.fadeIn(
               v-for='(section, index) in chapter.content', :key="index + '_'", 
-              :to="{ name: 'Note', params: { hash: getHash(section['link']) } }")
+              :to="{ name: 'NoteChap', params: { chapterNo: section['chapterNo'], hash: getHash(section['link']) } }")
               .inner-chapter.p-3
                 .bkg(:style="{'background-image': 'url(' + section.image + ')'}")
                 h2 {{ "Chapter " + section["chapterNo"] }}

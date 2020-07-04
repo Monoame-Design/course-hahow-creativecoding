@@ -20,7 +20,22 @@
 </template>
 
 <script>
-import { markdown } from "markdown";
+var MarkdownIt = require('markdown-it')
+var hljs = require('highlight.js'); // https://highlightjs.org/
+var markdownRenderer = require('markdown-it')({
+  html: true,
+  linkify: true,
+  typographer: true,
+  highlight: function (str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(lang, str).value;
+      } catch (__) {}
+    }
+
+    return ''; // use external default escaping
+  }
+});
 import index from "@/assets/index.js";
 
 export default {
@@ -38,7 +53,11 @@ export default {
   },
   methods: {
     mdToHTML(md) {
-      return markdown.toHTML(this.md).replace(/<a /g,"<a target='_blank' ");
+      let preMd = md
+      preMd = preMd.replace(/\!\[([\S\s]*?)\]\(([\S\s]*?)=.*?\)/g,"![$1]($2)")
+      let postResult = markdownRenderer.render(preMd);
+      postResult = postResult.replace(/<a /g,"<a target='_blank' ")
+      return postResult
     },
     toggleList() {
       let notesList = this.$refs.notesList;
@@ -69,11 +88,11 @@ export default {
         } else {
           this.next = this.chapterList[this.chapterNo + 1];
         }
-        // this.$nextTick(()=>{
-        //   document.querySelectorAll('note-wrapper').forEach((block) => {
-        //     hljs.highlightBlock(block);
-        //   });
-        // })
+        this.$nextTick(()=>{
+          document.querySelectorAll('note-wrapper').forEach((block) => {
+            hljs.highlightBlock(block);
+          });
+        })
       });
     },
     changeChapter(hash) {
@@ -97,17 +116,26 @@ export default {
   computed: {},
   created() {
     this.setChapterList();
-  },
-  mounted() {
+
     let hash = this.$route.params.hash;
+    if (!hash){
+      let list = [].concat.apply([],this.index.map(t=>t.content))
+      console.log(list);         
+      hash = list.find(c=>c.chapterNo==this.$route.params.chapterNo).hash;
+    }
     if (hash !== "none") {
       this.updateContent(hash);
     } else this.md = "#目前尚無內容";
+  },
+  mounted() {
   }
 };
 </script>
 
 <style lang="scss">
+i{
+  color: white;
+}
 .note-wrapper {
   // display: flex;
   // flex-direction: column;
