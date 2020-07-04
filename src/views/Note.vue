@@ -22,18 +22,24 @@
 <script>
 var MarkdownIt = require('markdown-it')
 var hljs = require('highlight.js'); // https://highlightjs.org/
+//import javascript from 'highlight.js/lib/languages/javascript';
+//hljs.registerLanguage('javascript', javascript);
 var markdownRenderer = require('markdown-it')({
   html: true,
   linkify: true,
   typographer: true,
   highlight: function (str, lang) {
+    if (!lang) lang="javascript"
     if (lang && hljs.getLanguage(lang)) {
       try {
-        return hljs.highlight(lang, str).value;
+        console.log(hljs.highlight(lang, str, true).value)
+        return '<pre class="hljs"><code>' +
+               hljs.highlight(lang, str, true).value +
+               '</code></pre>';
       } catch (__) {}
     }
 
-    return ''; // use external default escaping
+    return '<pre class="hljs"><code>' + markdownRenderer.utils.escapeHtml(str) + '</code></pre>';
   }
 });
 import index from "@/assets/index.js";

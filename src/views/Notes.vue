@@ -1517,6 +1517,10 @@ export default {
           transform: scale(1.2);
           transition-duration: 0.5s;
           text-decoration: none;
+          h4{
+            background-color: #fff;
+            color: black;
+          }
         }
         &::after {
           content: "";
