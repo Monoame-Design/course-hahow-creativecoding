@@ -1,6 +1,6 @@
 <template lang="pug">
   .page.page-note.pt-5.pb-5
-    .container.pt-3.pb-5.animated.fadeIn
+    .container.pt-3.pb-5
       .note-wrapper
         .notes-list(ref='notesList')
           h6 Table of Contents
@@ -11,16 +11,44 @@
               // <router-link  :to="{ name: 'Note', params: { hash: chapter.hash } }">{{ chapter.title }}</router-link>
             .toggl-list(@click='toggleList') =
         .back
-          router-link(:to="{ name: 'Notes', params: { } }") &lt; Back
-        .prev.switch-page(v-if='prev' @click='changeChapter(prev.hash)') &lt;
-        .next.switch-page(v-if='next' @click='changeChapter(next.hash)') &gt;
-        .note
+          router-link(:to="{ name: 'Notes', params: { } }")
+            i.fas.fa-angle-left
+            |   Back
+          
+        router-link.prev.switch-page(v-if='prev', 
+        :to="{ name: 'NoteChap', params: { chapterNo: prev.chapterNo } }" )
+          i.fas.fa-angle-left
+        router-link.next.switch-page(v-if='prev', 
+        :to="{ name: 'NoteChap', params: { chapterNo: next.chapterNo } }" )
+          i.fas.fa-angle-right
+        .note.animate__animated.animate__fadeIn
           .content(v-html='mdToHTML(md)')
 
 </template>
 
 <script>
-import { markdown } from "markdown";
+var MarkdownIt = require('markdown-it')
+var hljs = require('highlight.js'); // https://highlightjs.org/
+//import javascript from 'highlight.js/lib/languages/javascript';
+//hljs.registerLanguage('javascript', javascript);
+var markdownRenderer = require('markdown-it')({
+  html: true,
+  linkify: true,
+  typographer: true,
+  highlight: function (str, lang) {
+    if (!lang) lang="javascript"
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        console.log(hljs.highlight(lang, str, true).value)
+        return '<pre class="hljs"><code>' +
+               hljs.highlight(lang, str, true).value +
+               '</code></pre>';
+      } catch (__) {}
+    }
+
+    return '<pre class="hljs"><code>' + markdownRenderer.utils.escapeHtml(str) + '</code></pre>';
+  }
+});
 import index from "@/assets/index.js";
 
 export default {
@@ -38,7 +66,11 @@ export default {
   },
   methods: {
     mdToHTML(md) {
-      return markdown.toHTML(this.md).replace(/<a /g,"<a target='_blank' ");
+      let preMd = md
+      preMd = preMd.replace(/\!\[([\S\s]*?)\]\(([\S\s]*?)=.*?\)/g,"![$1]($2)")
+      let postResult = markdownRenderer.render(preMd);
+      postResult = postResult.replace(/<a /g,"<a target='_blank' ")
+      return postResult
     },
     toggleList() {
       let notesList = this.$refs.notesList;
@@ -69,17 +101,17 @@ export default {
         } else {
           this.next = this.chapterList[this.chapterNo + 1];
         }
-        // this.$nextTick(()=>{
-        //   document.querySelectorAll('note-wrapper').forEach((block) => {
-        //     hljs.highlightBlock(block);
-        //   });
-        // })
+        this.$nextTick(()=>{
+          document.querySelectorAll('note-wrapper').forEach((block) => {
+            hljs.highlightBlock(block);
+          });
+        })
       });
     },
-    changeChapter(hash) {
-      if (this.$route.params.hash === hash) return;
-      this.$router.push({ name: "Note", params: { hash: hash } });
-      this.updateContent(hash);
+    changeChapter(chapNo) {
+      if (this.$route.params.chapNo === chapNo) return;
+      this.$router.push({ name: "NoteChap", params: { chapNo: chapNo } });
+      // this.updateContent(hash);
     },
     setChapterList() {
       let chapters = [];
@@ -97,17 +129,26 @@ export default {
   computed: {},
   created() {
     this.setChapterList();
-  },
-  mounted() {
+
     let hash = this.$route.params.hash;
+    if (!hash){
+      let list = [].concat.apply([],this.index.map(t=>t.content))
+      console.log(list);         
+      hash = list.find(c=>c.chapterNo==this.$route.params.chapterNo).hash;
+    }
     if (hash !== "none") {
       this.updateContent(hash);
     } else this.md = "#目前尚無內容";
+  },
+  mounted() {
   }
 };
 </script>
 
 <style lang="scss">
+i{
+  color: white;
+}
 .note-wrapper {
   // display: flex;
   // flex-direction: column;

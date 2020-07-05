@@ -6,6 +6,7 @@ import Article from "../views/Article.vue";
 import Notes from "../views/Notes.vue";
 import Note from "../views/Note.vue";
 import Test from "../views/Test.vue";
+import { page } from 'vue-analytics'
 Vue.use(VueRouter);
 
 const routes = [
@@ -40,6 +41,11 @@ const routes = [
     component: Note
   },
   {
+    path: "/note/chap/:chapterNo",
+    name: "NoteChap",
+    component: Note
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting
@@ -55,5 +61,8 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 });
+router.afterEach((to, from)=>{
+  page(to.path)
+})
 
 export default router;
