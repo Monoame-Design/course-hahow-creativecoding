@@ -44,10 +44,6 @@ body {
   }
 }
 
-.container{
-  // max-width: 1200px;
-
-}
 canvas {
   position: fixed;
   left: 0;
