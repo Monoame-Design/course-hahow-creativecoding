@@ -3,7 +3,7 @@ read msg
 echo "Push and Deploy (y/n)? "
 read answer
 # sh cache.sh
-npm run build
+# npm run build
 git add .
 
 git commit -m "$msg"
