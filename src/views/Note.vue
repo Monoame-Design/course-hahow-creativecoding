@@ -6,7 +6,10 @@
           h6 Table of Contents
           .topic(v-for='(item, idx) in index' :key='idx')
             .topic-title {{ item.title }}
-            .chapter(v-for='(chapter, chapterNo) in item.content' :key='chapterNo' @click='changeChapter(chapter.hash)')
+            
+            router-link.chapter(v-for='(chapter, chapterNo) in item.content' 
+                              :key='chapterNo',
+                              :to="{ name: 'NoteChap', params: { chapterNo: chapter && chapter.chapterNo } }")
               | {{ chapter.title }}
               // <router-link  :to="{ name: 'Note', params: { hash: chapter.hash } }">{{ chapter.title }}</router-link>
             .toggl-list(@click='toggleList') =
@@ -16,10 +19,10 @@
             |   Back
           
         router-link.prev.switch-page(v-if='prev', 
-        :to="{ name: 'NoteChap', params: { chapterNo: prev.chapterNo } }" )
+        :to="{ name: 'NoteChap', params: { chapterNo: prev && prev.chapterNo } }" )
           i.fas.fa-angle-left
-        router-link.next.switch-page(v-if='prev', 
-        :to="{ name: 'NoteChap', params: { chapterNo: next.chapterNo } }" )
+        router-link.next.switch-page(v-if='next', 
+        :to="{ name: 'NoteChap', params: { chapterNo: next && next.chapterNo } }" )
           i.fas.fa-angle-right
         .note.animate__animated.animate__fadeIn
           .content(v-html='mdToHTML(md)')
@@ -39,6 +42,7 @@ var markdownRenderer = require('markdown-it')({
     if (!lang) lang="javascript"
     if (lang && hljs.getLanguage(lang)) {
       try {
+        console.log(str)
         console.log(hljs.highlight(lang, str, true).value)
         return '<pre class="hljs"><code>' +
                hljs.highlight(lang, str, true).value +
@@ -90,22 +94,19 @@ export default {
       axios.get(`https://hackmd.io/@ankycheng/${hash}/download`).then(res => {
         // console.log(res);
         this.md = res.data;
-        this.chapterNo = this.chapterList.findIndex(c => c.hash === hash);
+        // this.chapterNo = this.chapterList.findIndex(c => c.hash === hash);
+        this.chapterNo = 1*this.$route.params.chapterNo
+
         if (this.chapterNo == 1) {
           this.prev = null;
         } else {
-          this.prev = this.chapterList[this.chapterNo - 1];
+          this.prev = this.chapterList[this.chapterNo - 2];
         }
         if (this.chapterNo == this.chapterList.length) {
           this.next = null;
         } else {
-          this.next = this.chapterList[this.chapterNo + 1];
+          this.next = this.chapterList[this.chapterNo ];
         }
-        this.$nextTick(()=>{
-          document.querySelectorAll('note-wrapper').forEach((block) => {
-            hljs.highlightBlock(block);
-          });
-        })
       });
     },
     changeChapter(chapNo) {
@@ -213,19 +214,21 @@ i{
 .switch-page {
   cursor: pointer;
   position: fixed;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: bold;
   top: 50%;
   transition: 0.5s;
+  z-index: 30;
+  text-shadow: 0px 0px 10px rgba(black,0.3);
   &:hover {
     transform: scale(1.5);
     transition: 0.5s;
   }
   &.prev {
-    left: 100px;
+    left: 5vw;
   }
   &.next {
-    right: 100px;
+    right: 5vw;
   }
 }
 
@@ -248,6 +251,8 @@ i{
     position: relative;
     width: fit-content;
     overflow: hidden;
+    display: block;
+    color: white;
     &:hover {
       cursor: pointer;
       &::after {
@@ -299,10 +304,26 @@ i{
       margin: 25px 0;
     }
   }
+  h3{
+    position: relative;
+    &:before{
+      content: "▶";
+      font-size: 0.8em;
+      display: block;
+      position: absolute;
+      color:#ff6363;
+      left: -1.3em;
+      top: 0.3em;
+      
+    }
+  }
+  h1,h2,h3,h4,h5,h6{
+    line-height: 1.5;
+    font-weight: bold;
+  }
   h1{
     font-size: 3rem;
     font-weight: 900;
-    margin-bottom: 30px;
     margin-top: 20px;
   }
   h2{
