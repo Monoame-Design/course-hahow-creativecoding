@@ -131,6 +131,31 @@ export default {
                     image: "https://hahow.in/images/5e8a52d23a14b20022ebc166"
                 }
             ]
+        },
+        {
+            title: "【募資達標加碼章節】",
+            content: [{
+                    chapterNo: "17",
+                    title: "文本分析：了解文字的藝術（使用 Rita.js）",
+                    link: "https://hackmd.io/@ankycheng/HJM5yBcSP",
+                    hash: "HJM5yBcSP",
+                    image: "https://i.imgur.com/lkCaQRe.gif"
+                },
+                {
+                    chapterNo: "18",
+                    title: "物理模擬：讓物件自然的落下碰撞 (使用Matter.js)",
+                    link: "https://hackmd.io/@ankycheng/Hyju6clDv",
+                    hash: "Hyju6clDv",
+                    image: "https://i.imgur.com/90Mi5rW.png"
+                },
+                {
+                    chapterNo: "19",
+                    title: "3D世界與物件：p5的WebGL應用",
+                    link: "https://hackmd.io/@ankycheng/HyF_mvbov",
+                    hash: "HyF_mvbov",
+                    image: "https://i.imgur.com/xKc9Kfb.png"
+                }
+            ]
         }
     ]
 }
