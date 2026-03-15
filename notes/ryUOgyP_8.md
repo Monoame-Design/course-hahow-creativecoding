@@ -29,7 +29,7 @@ Google Arts 介紹：[幾何抽象主義 Google Arts& Culture](https://artsandcu
 在本次的範例中，我們將練習使用圓形、點以及特製形狀來繪製屬於你的角色！
 例如會學習到如何畫出這樣的海星，並再加上一些小技巧，例如最後讓海星的觸手、眼睛與背景產生動態的變化。就完成這個有點ㄎ一ㄤ的微醺海星囉～
 
-![](/media/imgur/bkPvCKS.gif)
+![](https://i.imgur.com/bkPvCKS.gif)
 
 ---
 

@@ -151,11 +151,11 @@
 ## 範例練習
 
 [物件生成的病毒們](https://www.openprocessing.org/sketch/904315)
-![](/media/imgur/sMWlGL5.gif)
+![](https://i.imgur.com/sMWlGL5.gif)
 
 
 [結合向量與射擊版本的病毒遊戲](https://www.openprocessing.org/sketch/904323)
-![](/media/imgur/b4dF8LK.gif)
+![](https://i.imgur.com/b4dF8LK.gif)
 
 
 ## 內容回顧
@@ -215,27 +215,27 @@
 ## 參考範例
 
 
-![](/media/imgur/hZnHV7X.png)
+![](https://i.imgur.com/hZnHV7X.png)
 https://www.marpi.studio/artwork
 
-![](/media/imgur/5w7Otei.png)
+![](https://i.imgur.com/5w7Otei.png)
 https://flappybird.io/
 
-![](/media/imgur/Ni4ghpZ.png)
+![](https://i.imgur.com/Ni4ghpZ.png)
 https://play.google.com/store/apps/details?id=com.lima.doodlejump&hl=en_US
 
-![](/media/imgur/I9jKlIl.png)
+![](https://i.imgur.com/I9jKlIl.png)
 https://www.reddit.com/r/Unity3D/comments/a9nc5o/gpu_particle_force_field_tutorial_link_to_full/
 
-![](/media/imgur/5BGMDXz.jpg)
+![](https://i.imgur.com/5BGMDXz.jpg)
 https://www.shoppingdesign.com.tw/post/view/5424?utm_source=facebook_sd&fbclid=IwAR2TQoTbsRJJMG0TyUBfCLgUyfvFngzt597YTcytwRQ0rya2-K-OLIE80NU
 
-![](/media/imgur/KbHrc2j.png)
-![](/media/imgur/wGPt3jV.png)
+![](https://i.imgur.com/KbHrc2j.png)
+![](https://i.imgur.com/wGPt3jV.png)
 
 https://natureofcode.com/book/chapter-6-autonomous-agents/
 
-![](/media/imgur/Qh5f7xK.jpg)
+![](https://i.imgur.com/Qh5f7xK.jpg)
 http://www.neilmendoza.com/portfolio/swim-clouds/
  
 **課程素材僅供教學，不提供其他商業用途**

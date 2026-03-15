@@ -177,17 +177,17 @@ print(message) // 會顯示 'Hi John !'
 ## 範例練習
 
 [函數 Demo 版本](https://www.openprocessing.org/sketch/895520)
-![](/media/imgur/C72m1uA.gif)
+![](https://i.imgur.com/C72m1uA.gif)
 
 
 [物件互動改良版](https://www.openprocessing.org/sketch/895546)
-![](/media/imgur/3i5jMVl.gif)
+![](https://i.imgur.com/3i5jMVl.gif)
 
 [老師作品版](https://www.openprocessing.org/sketch/894511)
-![](/media/imgur/eR7AFF8.png)
+![](https://i.imgur.com/eR7AFF8.png)
 
 [其他參考 - 夾壽司！](https://www.openprocessing.org/sketch/898136)
-![](/media/imgur/jgRPFYa.png)
+![](https://i.imgur.com/jgRPFYa.png)
 
 
 ## 內容回顧
@@ -215,18 +215,18 @@ print(message) // 會顯示 'Hi John !'
 ## 課後問題
 
 ## 範例觀摩
-![](/media/imgur/g8dAyRp.png)
+![](https://i.imgur.com/g8dAyRp.png)
 https://www.flickr.com/photos/kmasback/page6
-![](/media/imgur/KkM0bIg.jpg)
+![](https://i.imgur.com/KkM0bIg.jpg)
 https://borderless.teamlab.art/
 
-![](/media/imgur/ZKg2gdP.jpg)
+![](https://i.imgur.com/ZKg2gdP.jpg)
 https://www.teamlab.art/zh-hant/w/aquarium/
-![](/media/imgur/b10vFBL.jpg)
+![](https://i.imgur.com/b10vFBL.jpg)
 https://www.teamlab.art/zh-hant/w/whatloving/
-![](/media/imgur/sC8bN1j.png)
+![](https://i.imgur.com/sC8bN1j.png)
 https://www.openprocessing.org/sketch/891619/
-![](/media/imgur/Oe2IiSv.png)
+![](https://i.imgur.com/Oe2IiSv.png)
 https://www.openprocessing.org/sketch/892128
 https://www.openprocessing.org/sketch/887969/
 

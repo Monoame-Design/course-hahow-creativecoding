@@ -121,11 +121,11 @@
 ## 範例介紹
 
 ### 雨傘
-![](/media/imgur/gwtTak1.jpg)
+![](https://i.imgur.com/gwtTak1.jpg)
 https://cheyuwu.com/project/Floating_in_the_sky_-_VR_experience
 
 ### Explode 
-![](/media/imgur/EZ9f294.jpg)
+![](https://i.imgur.com/EZ9f294.jpg)
 https://cheyuwu.com/project/EXPLODE_-_Motion_Capture_Performance
 
 **課程素材僅供教學，不提供其他商業用途**

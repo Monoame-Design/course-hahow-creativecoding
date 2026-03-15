@@ -31,7 +31,7 @@
 
 
 ### RGB：使用紅、綠、藍三色交疊後產生的顏色
-![RGB 色光圖](/media/imgur/hqz3KrV.png)
+![RGB 色光圖](https://i.imgur.com/hqz3KrV.png)
 
 - 使用方式
     1. 透過 `colorMode(RGB)`
@@ -40,7 +40,7 @@
 - RGB模式的透明度會在 0~255
 
 ### HSB(HSV)：由色相(Hue)、飽和度(Saturation)、亮度(Brightness/Value)三要素組成，相對於 RGB 會更容易直接控制想要的顏色與範圍。
-![](/media/imgur/PCk53e8.png)
+![](https://i.imgur.com/PCk53e8.png)
 
 
 - 顏色的組成：
@@ -57,7 +57,7 @@
 ### Blend mode:顏色之間互相影響的方式
 - 使用方式：`blendMode(模式名稱)`
 - 帶入不同的模式在物件交疊的時候會有不同的顏色效果，各種不同的效果可以參照下圖：
-![](/media/imgur/egYRGUd.jpg)
+![](https://i.imgur.com/egYRGUd.jpg)
 ref: https://butterfliesandbugs.wordpress.com/tag/blendmode/
 
 
@@ -95,17 +95,17 @@ ref: https://butterfliesandbugs.wordpress.com/tag/blendmode/
 [Color Madness HSB](https://www.openprocessing.org/sketch/890712)
 結合多個色塊的排列，並且用上每個色塊的 x,y位置、`frameCount`、範圍內的隨機顏色變化，創造出會不斷變動的色彩效果。
 
-![](/media/imgur/NVMRiex.gif)
+![](https://i.imgur.com/NVMRiex.gif)
 
 [LerpColor](https://www.openprocessing.org/sketch/890727)
 使用 `lerpColor()` 創造顏色的漸層，搭配滑鼠位置與色彩重疊的效果。
 
-![](/media/imgur/bIHBf2C.gif)
+![](https://i.imgur.com/bIHBf2C.gif)
 
 
 [BLENDMode Screen](https://www.openprocessing.org/sketch/890730)
 使用 `blendMode` 搭配隨機色票，讓筆刷的圓形交疊時呈現繽紛的色彩。
-![](/media/imgur/nKETIHZ.gif)
+![](https://i.imgur.com/nKETIHZ.gif)
 
 
 ## 內容回顧
@@ -152,21 +152,21 @@ ref: https://butterfliesandbugs.wordpress.com/tag/blendmode/
 - https://coolors.co/ 色票生成工具
 
 ## 參考範例
-![](/media/imgur/Fpb5nW5.png)
+![](https://i.imgur.com/Fpb5nW5.png)
 https://www.pinterest.com/pin/502292164683954823/
 https://trendland.com/andy-gilmore-kaleidoscopic-illustrations/
-![](/media/imgur/C5HPv59.jpg)
+![](https://i.imgur.com/C5HPv59.jpg)
 https://twitter.com/zachlieberman/status/1019221645737840640
 https://www.instagram.com/zach.lieberman/?hl=en
 
-![](/media/imgur/KpPvG1A.jpg)
+![](https://i.imgur.com/KpPvG1A.jpg)
 https://www.instagram.com/mattmillsart/
 
-![](/media/imgur/N7xtppX.jpg)
-![](/media/imgur/pXN4Ysq.jpg)
+![](https://i.imgur.com/N7xtppX.jpg)
+![](https://i.imgur.com/pXN4Ysq.jpg)
 
 https://derivative.ca/community-post/night-getty-what-i-see-what-you-get
-![](/media/imgur/vHjRq4x.jpg)
+![](https://i.imgur.com/vHjRq4x.jpg)
 https://www.openprocessing.org/sketch/890774
 
 **課程素材僅供教學，不提供其他商業用途**

@@ -122,15 +122,15 @@ print(txt)     // 會印出「'你好'」
 
 ### [彈跳球球](https://www.openprocessing.org/sketch/883254)
 透過球球當前位置計算下個位置，也讓滑鼠的位置參與互動，點擊的話會讓球的位置逼近滑鼠，最後加上超過畫面底部的話動量反向的設定，讓球有種彈跳的感覺。
-![](/media/imgur/13KddZU.gif)
+![](https://i.imgur.com/13KddZU.gif)
 
 ### [彩色磚牆](https://www.openprocessing.org/sketch/883263)
 使用使用變數判斷目前 x 的位置，如果超出寬度的話就換行，另外使用 `random()` 增加色塊的寬度與顏色的多樣性。
-![](/media/imgur/didnNIN.gif)
+![](https://i.imgur.com/didnNIN.gif)
 
 ### [模擬時鐘](https://www.openprocessing.org/sketch/883303)
 透過 p5 內建方法拿到當前的時分秒，再用 `map()` 把時間對應到可以用在 `arc()` 上面的弧度，是很好用的技巧！
-![](/media/imgur/z5sw4ES.gif)
+![](https://i.imgur.com/z5sw4ES.gif)
 
 
 ## 內容回顧
