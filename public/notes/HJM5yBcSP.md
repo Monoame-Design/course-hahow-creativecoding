@@ -41,10 +41,10 @@ print(result.pos()) 取得詞性
 
 ## 範例練習
 [Raining](https://www.openprocessing.org/sketch/945385)
-![](https://i.imgur.com/jNOKhoI.gif)
+![](/media/imgur/jNOKhoI.gif)
 
 [Test Rita js](https://www.openprocessing.org/sketch/945381)
-![](https://i.imgur.com/lkCaQRe.gif)
+![](/media/imgur/lkCaQRe.gif)
 
 ## 內容回顧
 

@@ -21,7 +21,7 @@
     s.src = "https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"
     document.head.appendChild(s);
     ```
-![](https://i.imgur.com/90Mi5rW.png)
+![](/media/imgur/90Mi5rW.png)
 - 核心概念
     - Engine 模擬引擎
     - Bodies 物體與相關函數
@@ -151,17 +151,17 @@ https://github.com/CodingTrain/p5-matter
 https://www.openprocessing.org/sketch/903498
 https://www.openprocessing.org/sketch/905319
 
-![](https://i.imgur.com/LWwQfyQ.png)
+![](/media/imgur/LWwQfyQ.png)
 https://cuppetellimendoza.com/nervous-structure-field/
-![](https://i.imgur.com/wyvw1Kn.png)
+![](/media/imgur/wyvw1Kn.png)
 https://www.mentalfloss.com/article/81204/interactive-wall-google-made-thousands-arcade-buttons
-![](https://i.imgur.com/K1jjWpJ.png)
+![](/media/imgur/K1jjWpJ.png)
 https://www.youtube.com/watch?v=eazEgy_uA9E
-![](https://i.imgur.com/IxSCSYA.png)
+![](/media/imgur/IxSCSYA.png)
 https://www.pinterest.com/pin/383157880792234697/
-![](https://i.imgur.com/2x5w8Gr.png)
+![](/media/imgur/2x5w8Gr.png)
 https://www.openprocessing.org/sketch/903498
-![](https://i.imgur.com/p5PNOy7.png)
+![](/media/imgur/p5PNOy7.png)
 https://www.openprocessing.org/sketch/905319
-![](https://i.imgur.com/iL7Toe2.png)
+![](/media/imgur/iL7Toe2.png)
 https://www.instagram.com/jerson.latorre/

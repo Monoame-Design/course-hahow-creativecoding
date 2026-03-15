@@ -36,7 +36,7 @@
 #### 旋轉畫布 [rotate()](https://p5js.org/reference/#/p5/rotate)
 - 相對於現在的畫布角度，轉移 `r` 度 `rotate(r)` ，需要注意這邊的角度是弧度，不是角度喔！
 - 如果要使用角度，可以先用 `angleMode(DEGREES)` 或是 `angleMode(RADIANS)` 來設定單位。*註：角度的 0~360 度，對應到的是 0 ~ 2PI 喔！*
-    ![](https://i.imgur.com/J6P8XGX.png)
+    ![](/media/imgur/J6P8XGX.png)
 
 #### 縮放畫布 [scale()](https://p5js.org/reference/#/p5/scale)
 - 相對於目前的畫布大小進行縮放，如 `scale(0.5)`。 -> 變成 0.5 倍，1 的話是原本的大小。
@@ -45,7 +45,7 @@
 #### 保存/還原畫布設定 [push()](https://p5js.org/reference/#/p5/push)/[pop()](https://p5js.org/reference/#/p5/pop)
 - 儲存當下的畫布狀態：push()
 - 回到前一個畫布狀態：pop()
-![](https://i.imgur.com/Qr1JACS.png)
+![](/media/imgur/Qr1JACS.png)
 - 搭配迴圈使用，如此一來可以確保每次迴圈裡面的初始畫布都是一樣的，不會因為我們的操作而混亂：
     ```
     for(var i = 0; i < 10; i++){
@@ -74,17 +74,17 @@
 ## 範例練習
 [translate demo](https://www.openprocessing.org/sketch/891571)
 結合 translate() 與 rotate() 與色票變換的互動色彩筆刷
-![](https://i.imgur.com/nYe1BSZ.gif)
+![](/media/imgur/nYe1BSZ.gif)
 
 [sunflower](https://www.openprocessing.org/sketch/891579)
 除了選轉與移動畫布，也加上了 shearX() 偏移畫布的作法
-![](https://i.imgur.com/Lvj46BL.gif)
+![](/media/imgur/Lvj46BL.gif)
 
 [使用 rotate() 與 frameCount 的計算做出擴散的效果](https://www.openprocessing.org/sketch/891578)
-![](https://i.imgur.com/QvAjA6p.gif)
+![](/media/imgur/QvAjA6p.gif)
 
 [應用兩張畫布的疊合效果](https://www.openprocessing.org/sketch/891586)
-![](https://i.imgur.com/txEyraA.gif)
+![](/media/imgur/txEyraA.gif)
 
 ## 內容回顧
 小技巧：
@@ -103,7 +103,7 @@
       rect(0,0,50,50)
     }
     ```
-    ![](https://i.imgur.com/MfFeM5q.gif)
+    ![](/media/imgur/MfFeM5q.gif)
 
     先 rotate()，再 translate()
     ```
@@ -114,7 +114,7 @@
       rect(0,0,50,50)
     }
     ```
-    ![](https://i.imgur.com/dg9AMIS.gif)
+    ![](/media/imgur/dg9AMIS.gif)
 - scale() 搭配 sqrt(),log() 與 frameCount 做出放射狀的感覺
     ```
     scale(1/squrt(frameCount)*5)
@@ -154,17 +154,17 @@
 - 做渦狀連續transform的應用
 
 ## 參考範例
-![](https://i.imgur.com/dhZq5lv.png)
+![](/media/imgur/dhZq5lv.png)
 https://www.pinterest.com/pin/396879785912174429/
-![](https://i.imgur.com/DvUKcyG.jpg)
+![](/media/imgur/DvUKcyG.jpg)
 https://tylerxhobbs.com/essays/2019/reflections-on-five-years-of-making-art-through-programming
-![](https://i.imgur.com/SNjA3Ub.jpg)
+![](/media/imgur/SNjA3Ub.jpg)
 https://fineartamerica.com/featured/beneath-the-sea-spiral-kathy-kelly.html
-![](https://i.imgur.com/CXyiVA5.png)
+![](/media/imgur/CXyiVA5.png)
 https://www.openprocessing.org/sketch/700092
-![](https://i.imgur.com/7T67U28.png)
+![](/media/imgur/7T67U28.png)
 https://vimeo.com/258459372
-![](https://i.imgur.com/62MNZEn.png)
+![](/media/imgur/62MNZEn.png)
 http://narf.pl/posts/procedural-trees
 
 **課程素材僅供教學，不提供其他商業用途**

@@ -6,28 +6,28 @@ export default {
                     title: "Creative Coding 程式創作是什麼",
                     link: "https://hackmd.io/@ankycheng/HkFKub1AL",
                     hash: "HkFKub1AL",
-                    image: "https://hahow-production.imgix.net/5e6043e064defd0024bd96c5?w=1000&auto=format&sat=0&fmt=webp&s=43bd3ba1b1db1b11db22a12d4b5595bc"
+                    image: "/media/hahow/5e6043e064defd0024bd96c5.webp"
                 },
                 {
                     chapterNo: "2",
                     title: "程式框架 - p5.js 開發入門",
                     link: "https://hackmd.io/@ankycheng/Sy7Vf84_L",
                     hash: "Sy7Vf84_L",
-                    image: "https://i.imgur.com/wgigMhT.gif"
+                    image: "/media/imgur/wgigMhT.gif"
                 },
                 {
                     chapterNo: "3",
                     title: "基礎圖形繪製 - 從點線面到塗鴉",
                     link: "https://hackmd.io/@ankycheng/ryUOgyP_8",
                     hash: "ryUOgyP_8",
-                    image: "https://i.imgur.com/bkPvCKS.gif"
+                    image: "/media/imgur/bkPvCKS.gif"
                 },
                 {
                     chapterNo: "4",
                     title: "變數與資料－賦予可變與連續性",
                     link: "https://hackmd.io/@ankycheng/SyX8aEW9I",
                     hash: "SyX8aEW9I",
-                    image: "https://i.imgur.com/didnNIN.gif"
+                    image: "/media/imgur/didnNIN.gif"
                 }
             ]
         },
@@ -38,21 +38,21 @@ export default {
                     title: "條件:迴圈 與互動 - 建構創作規則",
                     link: "https://hackmd.io/@ankycheng/r16aIoG5I",
                     hash: "r16aIoG5I",
-                    image: "https://i.imgur.com/1Aaf4Lb.gif"
+                    image: "/media/imgur/1Aaf4Lb.gif"
                 },
                 {
                     chapterNo: "6",
                     title: "增添色彩－玩耍色彩與留下痕跡",
                     link: "https://hackmd.io/@ankycheng/Bk9VvjfcI",
                     hash: "Bk9VvjfcI",
-                    image: "https://i.imgur.com/nKETIHZ.gif"
+                    image: "/media/imgur/nKETIHZ.gif"
                 },
                 {
                     chapterNo: "7",
                     title: "進階繪圖 - 畫布操作與編織複雜圖形",
                     link: "https://hackmd.io/@ankycheng/Hycbnu858",
                     hash: "Hycbnu858",
-                    image: "https://i.imgur.com/nYe1BSZ.gif"
+                    image: "/media/imgur/nYe1BSZ.gif"
                 }
             ]
         },
@@ -63,21 +63,21 @@ export default {
                     title: "函數與物件互動 - 建構無法預測的小世界",
                     link: "https://hackmd.io/@ankycheng/HkMQsfh58",
                     hash: "HkMQsfh58",
-                    image: "https://i.imgur.com/3i5jMVl.gif"
+                    image: "/media/imgur/3i5jMVl.gif"
                 },
                 {
                     chapterNo: "9",
                     title: "韻律、隨機性與噪聲 - 詩意與自然模擬",
                     link: "https://hackmd.io/@ankycheng/S1NXKYSj8",
                     hash: "S1NXKYSj8",
-                    image: "https://i.imgur.com/zjP6Fe3.gif"
+                    image: "/media/imgur/zjP6Fe3.gif"
                 },
                 {
                     chapterNo: "10",
                     title: "網頁元素(DOM) - 取得文字、數值和其他輸入",
                     link: "https://hackmd.io/@ankycheng/rythzyPjU",
                     hash: "rythzyPjU",
-                    image: "https://i.imgur.com/1v5orco.gif"
+                    image: "/media/imgur/1v5orco.gif"
                 },
                 
                 {
@@ -85,7 +85,7 @@ export default {
                     title: "物件導向與向量 - Class 粒子系統",
                     link: "https://hackmd.io/@ankycheng/SkftLc1hI",
                     hash: "SkftLc1hI",
-                    image: "https://i.imgur.com/b4dF8LK.gif"
+                    image: "/media/imgur/b4dF8LK.gif"
                 },
             ]
         },
@@ -96,21 +96,21 @@ export default {
                     title: "媒體 - 影像、聲音與影片的整合與拆解",
                     link: "https://hackmd.io/@ankycheng/SyzmSKs2L",
                     hash: "SyzmSKs2L",
-                    image: "https://i.imgur.com/7Y6uL8F.gif"
+                    image: "/media/imgur/7Y6uL8F.gif"
                 },
                 {
                     chapterNo: "13",
                     title: "使用者影音互動 - 即時串流聲音與影片",
                     link: "https://hackmd.io/@ankycheng/Hk77W02nU",
                     hash: "Hk77W02nU",
-                    image: "https://i.imgur.com/aTR3gOl.gif"
+                    image: "/media/imgur/aTR3gOl.gif"
                 },
                 {
                     chapterNo: "14",
                     title: "資料視覺化與API - 將資料轉化成藝術",
                     link: "https://hackmd.io/@ankycheng/r1F86UyTI",
                     hash: "r1F86UyTI",
-                    image: "https://i.imgur.com/S5IqDoB.gif"
+                    image: "/media/imgur/S5IqDoB.gif"
                 }
             ]
         },
@@ -121,14 +121,14 @@ export default {
                     title: "發表作品 - 輸出與使用至不同平台",
                     link: "https://hackmd.io/@ankycheng/S1WOWmLaU",
                     hash: "S1WOWmLaU",
-                    image: "https://media.giphy.com/media/dC3AJ4cDkyyyULI0Xc/giphy.gif"
+                    image: "/media/giphy/dC3AJ4cDkyyyULI0Xc.gif"
                 },
                 {
                     chapterNo: "16",
                     title: "後續路線與工具介紹 - OF / Unreal / Unity / TD",
                     link: "https://hackmd.io/@ankycheng/B1UmtVq6L",
                     hash: "B1UmtVq6L",
-                    image: "https://hahow.in/images/5e8a52d23a14b20022ebc166"
+                    image: "/media/hahow/5e8a52d23a14b20022ebc166.jpg"
                 }
             ]
         },
@@ -139,21 +139,21 @@ export default {
                     title: "文本分析：了解文字的藝術（使用 Rita.js）",
                     link: "https://hackmd.io/@ankycheng/HJM5yBcSP",
                     hash: "HJM5yBcSP",
-                    image: "https://i.imgur.com/lkCaQRe.gif"
+                    image: "/media/imgur/lkCaQRe.gif"
                 },
                 {
                     chapterNo: "18",
                     title: "物理模擬：讓物件自然的落下碰撞 (使用Matter.js)",
                     link: "https://hackmd.io/@ankycheng/Hyju6clDv",
                     hash: "Hyju6clDv",
-                    image: "https://i.imgur.com/90Mi5rW.png"
+                    image: "/media/imgur/90Mi5rW.png"
                 },
                 {
                     chapterNo: "19",
                     title: "3D世界與物件：p5的WebGL應用",
                     link: "https://hackmd.io/@ankycheng/HyF_mvbov",
                     hash: "HyF_mvbov",
-                    image: "https://i.imgur.com/xKc9Kfb.png"
+                    image: "/media/imgur/xKc9Kfb.png"
                 }
             ]
         }

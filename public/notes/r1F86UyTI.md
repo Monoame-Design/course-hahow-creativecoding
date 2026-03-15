@@ -208,10 +208,10 @@
 
 ## 範例練習
 [讀取資料與繪製](https://www.openprocessing.org/sketch/911913)
-![](https://i.imgur.com/LnnwUIr.gif)
+![](/media/imgur/LnnwUIr.gif)
 
 [增加用戶控制互動](https://www.openprocessing.org/sketch/911120)
-![](https://i.imgur.com/S5IqDoB.gif)
+![](/media/imgur/S5IqDoB.gif)
 
 
 
@@ -268,23 +268,23 @@
 
 ## 作品範例
 
-![](https://i.imgur.com/5Uh5Cqc.png)
+![](/media/imgur/5Uh5Cqc.png)
 https://thoughtbot.com/blog/analyzing-minards-visualization-of-napoleons-1812-march
 
-![](https://i.imgur.com/IS5EMlg.jpg)
+![](/media/imgur/IS5EMlg.jpg)
 http://www.dear-data.com/theproject
 
-![](https://i.imgur.com/rGNXyje.png)
+![](/media/imgur/rGNXyje.png)
 https://visme.co/blog/best-data-visualizations/
 
-![](https://i.imgur.com/78DGwXB.jpg)
+![](/media/imgur/78DGwXB.jpg)
 https://geoawesomeness.com/ubers-amazing-geospatial-data-viz-tool-joins-the-open-source-community/
 
-![](https://i.imgur.com/5zaq41W.png)
+![](/media/imgur/5zaq41W.png)
 https://www.tapclicks.com/resources/blog/best-data-visualizations/
 
 非數據類型的data viz
-![](https://i.imgur.com/sZU0fEA.png)
+![](/media/imgur/sZU0fEA.png)
 https://www.washingtonpost.com/graphics/2019/business/immersive-space-suits-history-fashion-and-function/
 https://visme.co/blog/best-data-visualizations/
 
