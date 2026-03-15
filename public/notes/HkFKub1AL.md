@@ -19,23 +19,23 @@
 
 ### 程式創作的應用場域
 - 3D投影
-    ![](/media/other/imageinput-13.gif =500x) 
+    ![](https://timrodenbroeker.de/wp-content/uploads/2016/11/imageinput-13.gif =500x) 
     https://timrodenbroeker.de/
 - 舞台表演
-    ![](/media/other/CCLThumb.gif =500x)
+    ![](https://www.tobyk.com.au/wordpress/wp-content/uploads/2015/04/CCLThumb.gif =500x)
     https://www.tobyk.com.au/
 - 展示設計
-    ![](/media/imgur/a4meq8N.png)
+    ![](https://i.imgur.com/a4meq8N.png)
     https://www.marpi.studio/artwork
 - 遊戲設計
-    ![](/media/other/tumblr_phh056QyGM1relaado2_400.gifv)
+    ![](https://66.media.tumblr.com/8e6b6b55e2cf1dd30a589e8082784a8f/tumblr_phh056QyGM1relaado2_400.gifv)
     https://66.media.tumblr.com/
 - 實體/虛擬互動設計
-    ![](/media/imgur/NFL5ZeB.png)
+    ![](https://i.imgur.com/NFL5ZeB.png)
     https://www.shoppingdesign.com.tw/post/view/5424
 - 音樂
-    ![](/media/other/Ewlz.gif)
-    /media/other/Ewlz.gif
+    ![](https://i.gifer.com/Ewlz.gif)
+    https://i.gifer.com/Ewlz.gif
 
 ### 程式發展路線
 - 與傳統程式學習的不同
@@ -90,7 +90,7 @@
 - OpenProcessing 頁面
 - 記得 Tag 老闆的IG，老闆也會把你的作品轉發到限動中喔！
     - https://www.instagram.com/bosscodingplease/
-    ![](/media/imgur/rD0Zcy0.jpg)
+    ![](https://i.imgur.com/rD0Zcy0.jpg)
 - Wordpress / Hackmd 整理筆記
 - 可以參考其他同學的筆記：
     - https://hackmd.io/mZT9mXtJRzGbO98PcNvZ9g?view

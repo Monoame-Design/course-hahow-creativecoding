@@ -30,7 +30,7 @@
 ### 範例練習
 這是今天筆刷練習的成品，我們將會學到如何創建一個新的畫布、修改顏色、加上簡單的判斷式後做出互動的畫筆。
 
-![筆刷練習](/media/imgur/wgigMhT.gif)
+![筆刷練習](https://i.imgur.com/wgigMhT.gif)
 
 沒有程式經驗的同學也不用擔心，可以先跟著一起做，感受ㄧ下用程式繪圖的樂趣。中間的許多細節在後續的章節中都會陸續提到，也可以自己看看 [文件](https://p5js.org/reference/) ，說不定就能迎刃而解，進而享受解決問題的過程喔 😃
 
@@ -76,7 +76,7 @@ else
 ---
 ### Cheatsheet 與小技巧分享
 
-#### Cheatsheet![](/media/imgur/dFNjX01.png)
+#### Cheatsheet![](https://i.imgur.com/dFNjX01.png)
 
 #### 快速鍵（使用 Mac 的同學只要將 ctrl 代換成 ⌘ 即可）
 - Ctrl + F：關鍵字搜尋

@@ -38,7 +38,7 @@ const visuals = [
     title: "200529 Bubble Planet",
     isPjs: "2",
     description:
-      "Testing new technique drawing mask layer and bg layer then combine with image masking function.\n\n[GIF /media/giphy/QAxfMqa1mCr7Ix65d2.gif]",
+      "Testing new technique drawing mask layer and bg layer then combine with image masking function.\n\n[GIF https://media.giphy.com/media/QAxfMqa1mCr7Ix65d2/giphy.gif]",
     instructions: "",
     baseFolder: "",
     path: "",
@@ -72,7 +72,7 @@ const visuals = [
     title: "200530 Mission Success",
     isPjs: "2",
     description:
-      "In celebration of SpaceX's successful rocket launch! Made a rocket landing interaction with fire.\n[GIF /media/giphy/jReOt7BJrxOmbtrvaE.gif]",
+      "In celebration of SpaceX's successful rocket launch! Made a rocket landing interaction with fire.\n[GIF https://media.giphy.com/media/jReOt7BJrxOmbtrvaE/giphy.gif]",
     instructions: "",
     baseFolder: "",
     path: "",
@@ -370,7 +370,7 @@ const visuals = [
     title: "200531 Glowing Mushroom",
     isPjs: "2",
     description:
-      "The mushroom might be poisonous, be careful when you eat them.\n[GIF /media/giphy/l522gSCMNr57SM8RKf.gif]",
+      "The mushroom might be poisonous, be careful when you eat them.\n[GIF https://media.giphy.com/media/l522gSCMNr57SM8RKf/giphy.gif]",
     instructions: "",
     baseFolder: "",
     path: "",
@@ -404,7 +404,7 @@ const visuals = [
     title: "200601 Chinese Mosaic",
     isPjs: "2",
     description:
-      "Testing integrating the camera pixel and convert to Chinese words based on brightness.\n[GIF /media/giphy/eIrMhOoMjLGtDccW8z.gif]",
+      "Testing integrating the camera pixel and convert to Chinese words based on brightness.\n[GIF https://media.giphy.com/media/eIrMhOoMjLGtDccW8z/giphy.gif]",
     instructions: "",
     baseFolder: "",
     path: "",
@@ -504,7 +504,7 @@ const visuals = [
     title: "200602 Fish race",
     isPjs: "2",
     description:
-      "The fish are hungry, please feed them or they will bite you.\n[GIF /media/giphy/f6yUAOCOEIcS0iwTxr.gif]",
+      "The fish are hungry, please feed them or they will bite you.\n[GIF https://media.giphy.com/media/f6yUAOCOEIcS0iwTxr/giphy.gif]",
     instructions: "",
     baseFolder: "",
     path: "",
@@ -1396,7 +1396,7 @@ const visuals = [
     title: "200616 Snail Racing",
     isPjs: "2",
     description:
-      "Every Snail has it's own speed and unique patterns, it's okay to run slower than others.\n[GIF /media/giphy/MZpqqkIOwN6orFLqS8.gif]",
+      "Every Snail has it's own speed and unique patterns, it's okay to run slower than others.\n[GIF https://media.giphy.com/media/MZpqqkIOwN6orFLqS8/giphy.gif]",
     instructions: "",
     baseFolder: "",
     path: "",

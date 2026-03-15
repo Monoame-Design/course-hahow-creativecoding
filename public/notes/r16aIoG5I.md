@@ -57,17 +57,17 @@ for(計數變數的起始狀態; 結束條件; 每次結束後變數如何變化
 
 1. [創造線框感的圓](https://www.openprocessing.org/sketch/889973)
     使用多個圓形重複堆疊起來，使用了 map() 把讓重疊的圓行邊框出現漸層，再控制滑鼠的位置，改變圓形的大小
-    ![](/media/imgur/hvx41XA.gif)
+    ![](https://i.imgur.com/hvx41XA.gif)
 2. [重複且規律排列的網格系統](https://www.openprocessing.org/sketch/889991)
     自己定義一些會影響畫面隨機性的變數，例如讓 count 從 0 開始數，每執行完一次 for 迴圈就 +1，而在迴圈內如果對 count 取餘數（%），符合特定條件才繪製，就會創造出有規律的排列感覺。最後再對顏色與內部色塊做點隨機變化，就完成多樣的網格畫面了！
-    ![](/media/imgur/K58WBuz.png)
+    ![](https://i.imgur.com/K58WBuz.png)
 
 3. [山脈筆刷](https://www.openprocessing.org/sketch/889995)
     將一群大小有隨機與特定比例變化的圈圈堆疊起來，看起來就像是一座座的山⛰
-    ![](/media/imgur/1Aaf4Lb.gif)
+    ![](https://i.imgur.com/1Aaf4Lb.gif)
 4. [狀態變換的筆刷](https://www.openprocessing.org/sketch/889996)
     筆刷的部分加入了前一禎圖片的滑鼠位置(pmouseX, pmouseY)，與當前的滑鼠位置做距離計算（dist），藉由 dist 的大小來決定噴濺的距離。另外加上點擊滑鼠之後可以改變繪圖狀態，切換噴灑、圓形、方形的繪製結果。
-    ![](/media/imgur/sUHsJDX.gif)
+    ![](https://i.imgur.com/sUHsJDX.gif)
 
 ## 內容回顧
 
@@ -151,21 +151,21 @@ for(計數變數的起始狀態; 結束條件; 每次結束後變數如何變化
 ### function() 跟 property的差別？（函式 vs 變數）
 
 ## 參考案例
-![](/media/imgur/i6WVwG4.jpg)
+![](https://i.imgur.com/i6WVwG4.jpg)
 https://www.epochtimes.com/b5/17/10/2/n9693014.htm
 https://www.pinterest.com/search/pins/?q=generative&rs=typed&term_meta[]=generative%7Ctyped
-![](/media/imgur/nIBFsOB.jpg)
-![](/media/imgur/CkyOmcu.jpg)
+![](https://i.imgur.com/nIBFsOB.jpg)
+![](https://i.imgur.com/CkyOmcu.jpg)
 https://www.openprocessing.org/sketch/859999
-![](/media/imgur/o2Ipa6c.png)
+![](https://i.imgur.com/o2Ipa6c.png)
 https://www.openprocessing.org/sketch/881611
-![](/media/imgur/mpSl0yN.jpg)
+![](https://i.imgur.com/mpSl0yN.jpg)
 https://www.openprocessing.org/sketch/880483
 
-![](/media/imgur/lipja4V.png)
+![](https://i.imgur.com/lipja4V.png)
 https://www.openprocessing.org/sketch/889996
 
-![](/media/imgur/mlsYVFM.jpg)
+![](https://i.imgur.com/mlsYVFM.jpg)
 https://www.openprocessing.org/sketch/890072
 
 https://www.pinterest.com/search/pins/?q=Textile%20patterns&rs=autocomplete_bubble&b_id=BCJbOvr0wqY_AAAAAAAAAACQHHazYOT-gVVCYQtg6OJsLuFSjCxjANcln4VGNHtmbYlrSUxqlP98U-8JV6OjwXQc0t7nsnvwEVjxitaI2E_M&source_id=Z0g5Lb1l

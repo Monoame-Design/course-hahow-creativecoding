@@ -16,22 +16,22 @@
 
 ### 複習一下三角函數 😖
 - 極座標的概念
-    ![sin cos](/media/imgur/h1FRD5B.png =500x)
+    ![sin cos](https://i.imgur.com/h1FRD5B.png =500x)
 - 定義：
     - 一種三角形裡面角度與邊長的對應關係
     - 我們有一個三角形：
-        ![](/media/imgur/d6UITaY.png =250x)
+        ![](https://i.imgur.com/d6UITaY.png =250x)
     - sin(正弦)：
         - 在直角三角形中，一個銳角 angle A 的正弦定義為它的對邊與斜邊的比值，也就是：sinθ = a/c
         - θ 從 0 ~ 2PI(0 ~ 360度)的過程中，sin(θ)會呈現 `0 -> 1 -> 0 -> -1 -> 0` 這樣的結果變化。
     - cos(餘弦)
         - 在直角三角形中，一個銳角 angle A 的餘弦定義為它的鄰邊與斜邊的比值，也就是：sinθ = b/c
         - θ 從 0 ~ 2PI(0 ~ 360度)的過程中，cos(θ)會呈現 `1 -> 0 -> -1 -> 0 -> 1` 這樣的結果變化。
-        ![](/media/other/Circle_cos_sin.gif =500x)
+        ![](https://upload.wikimedia.org/wikipedia/commons/3/3b/Circle_cos_sin.gif =500x)
     - atan2()
         - 回傳兩個參數的反正切（-PI ~ PI 之間）
         - 可以理解取某個座標(x,y)與原點(0,0)組成的現段與 X 軸所構成的夾角弧度
-            ![](/media/imgur/3Jm72py.png =250x)
+            ![](https://i.imgur.com/3Jm72py.png =250x)
         - p5 中的應用
             ```
             translate(width / 2, height / 2);
@@ -53,16 +53,16 @@
     - [random()](https://p5js.org/reference/#/p5/random)：隨機的亂數
     - [noise()](https://p5js.org/reference/#/p5/noise)：連續的亂數
         - noise 的生成：在一個連續的 n 維空間採樣
-            ![https://flafla2.github.io/2014/08/09/perlinnoise.html](/media/imgur/jlcbJ56.png =400x)
-            ![](/media/imgur/CIP51dD.png =400x)
+            ![https://flafla2.github.io/2014/08/09/perlinnoise.html](https://i.imgur.com/jlcbJ56.png =400x)
+            ![](https://i.imgur.com/CIP51dD.png =400x)
         - 相較於random，noise 取的的亂數都會跟前後有相關，因此亂數之間不會出現大幅度的差距。
         - 在一次的繪製中，noise 取得的亂數是固定的，不像是 random 會不斷變動
-            ![](/media/imgur/HvrcJTJ.gif)
+            ![](https://i.imgur.com/HvrcJTJ.gif)
             //noise 生成的亂數
-            ![](/media/imgur/hFBXXKs.gif)
+            ![](https://i.imgur.com/hFBXXKs.gif)
             //random 生成的亂數
         - p5中， noise 可以接收最多 3 維的參數
-            ![https://docs.substance3d.com/sddoc/3d-simplex-noise-168199190.html](/media/imgur/nB090yd.png =150x)
+            ![https://docs.substance3d.com/sddoc/3d-simplex-noise-168199190.html](https://i.imgur.com/nB090yd.png =150x)
         - 結合 noise 與粒子系統
             ```
             for(let p of particles){
@@ -77,7 +77,7 @@
 
 ### 速度曲線的應用
 - 速度與分佈曲線
-    ![](/media/imgur/kkmKahr.png)
+    ![](https://i.imgur.com/kkmKahr.png)
     - https://easings.net/
     - https://www.openprocessing.org/sketch/897433
 - 速度曲線函式
@@ -86,23 +86,23 @@
 ## 範例練習
 
 [波狀函數的繪圖](https://www.openprocessing.org/sketch/897653)
-![](/media/imgur/y61aSS3.gif =500x)
+![](https://i.imgur.com/y61aSS3.gif =500x)
 
 
 [跟著滑鼠跑的眼睛 eyes atan2 demo](https://www.openprocessing.org/sketch/897662)
-![](/media/imgur/zjP6Fe3.gif =500x)
+![](https://i.imgur.com/zjP6Fe3.gif =500x)
 
 [TextSpiral](https://www.openprocessing.org/sketch/897518)
-![](/media/imgur/oBm4Dyf.gif =500x)
+![](https://i.imgur.com/oBm4Dyf.gif =500x)
 
 [noise demo](https://www.openprocessing.org/sketch/897665)
-![](/media/imgur/kEUJw2Q.gif =500x)
+![](https://i.imgur.com/kEUJw2Q.gif =500x)
 
 [sin+noise spiral](https://www.openprocessing.org/sketch/897672)
-![](/media/imgur/8ZWIoe0.gif =500x)
+![](https://i.imgur.com/8ZWIoe0.gif =500x)
 
 [motion demo](https://www.openprocessing.org/sketch/897673)
-![](/media/imgur/4TqBLgw.gif =500x)
+![](https://i.imgur.com/4TqBLgw.gif =500x)
 
 
 ## 內容回顧
@@ -140,35 +140,35 @@
 
 ## 參考範例
 
-![](/media/imgur/TORHTMw.png)
+![](https://i.imgur.com/TORHTMw.png)
 https://dev.to/bramses/use-code-to-make-stuff-2-processing-a-bit-of-touchdesigner-lk
 
-![]( /media/giphy/j2w1a1E4Ohi9vpWSnm.gif)
+![]( https://media.giphy.com/media/j2w1a1E4Ohi9vpWSnm/giphy.gif)
 https://www.openprocessing.org/sketch/888258
 
 
-![](/media/giphy/LNlA77RPcEHBbzSeUJ.gif)
+![](https://media.giphy.com/media/LNlA77RPcEHBbzSeUJ/giphy.gif)
 https://www.openprocessing.org/sketch/888258
 
-![](/media/other/37427222f201e6d2420d518c91655190.gif)
+![](https://i.pinimg.com/originals/37/42/72/37427222f201e6d2420d518c91655190.gif)
 https://www.pinterest.es/pin/414190496971893095/
 
-![](/media/imgur/Rz19Bpo.png)
+![](https://i.imgur.com/Rz19Bpo.png)
 https://www.pinterest.com/pin/567101778068077798/
 
-![](/media/imgur/4AP85jb.png)
+![](https://i.imgur.com/4AP85jb.png)
 https://codepen.io/vcomics/pen/djqNrm
 
-![](/media/imgur/Pv3QTk3.jpg)
+![](https://i.imgur.com/Pv3QTk3.jpg)
 https://tylerxhobbs.com/
 
-![](/media/imgur/icx5EHf.png)
+![](https://i.imgur.com/icx5EHf.png)
 https://www.openprocessing.org/sketch/835766
 
-![](/media/imgur/SQQaMNg.jpg)
+![](https://i.imgur.com/SQQaMNg.jpg)
 https://www.openprocessing.org/sketch/897428
 
-![](/media/giphy/W50nwWs1CF4H6R1Itb.gif)
+![](https://media.giphy.com/media/W50nwWs1CF4H6R1Itb/giphy.gif)
 https://www.openprocessing.org/sketch/895972
 
 **課程素材僅供教學，不提供其他商業用途**

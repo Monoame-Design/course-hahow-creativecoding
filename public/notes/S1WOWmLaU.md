@@ -40,23 +40,23 @@
 - Github Page
     - 到 [GitHub](https://github.com/) 註冊帳號：
     - 建立新的程式碼儲存倉庫
-        ![](/media/imgur/4OpgGTy.png)
+        ![](https://i.imgur.com/4OpgGTy.png)
     - 上傳程式碼，選擇所有的程式文件並 commit
-        ![](/media/imgur/Vp8cHzQ.png)
-        ![](/media/imgur/ykqQexD.png)
+        ![](https://i.imgur.com/Vp8cHzQ.png)
+        ![](https://i.imgur.com/ykqQexD.png)
     - 到 Settings -> GitHub Pages 發佈
         - Source 選擇 `master branch`
         - 發佈之後就可以看到呈現的網址囉！
-        ![](/media/imgur/yRhuDHE.png)
+        ![](https://i.imgur.com/yRhuDHE.png)
 
 - 在自己的網站放上作品
     - 放置場景
         - 全景頁面
-            ![](/media/imgur/anP4eB4.jpg)
+            ![](https://i.imgur.com/anP4eB4.jpg)
         - 部分區塊
-            ![](/media/imgur/KHj69vs.jpg)
+            ![](https://i.imgur.com/KHj69vs.jpg)
         - 背景
-            ![](/media/imgur/Ie7pOsO.gif)
+            ![](https://i.imgur.com/Ie7pOsO.gif)
     - 使用 iFrame
         - `<iframe src="你的作品網址"></iframe>`：可以包覆其他網站的 HTML 標籤
         - 設定長寬（寫在 css）
@@ -96,7 +96,7 @@
     - Processing 是以 JAVA 為基礎的程式語言，而 p5 是以 JavaScript 為基礎，但是 P5 已經盡可能依照 Processing 的語法設計，所以大多數的語法都是可以通用的
     - 差異的細節與轉換可以參考官方的文件：https://github.com/processing/p5.js/wiki/Processing-transition
 - 在 OpenProcessing 中使用 Processing 語法
-    ![](/media/imgur/YjY8cKf.png)
+    ![](https://i.imgur.com/YjY8cKf.png)
 
 ### 心法與小技巧
 

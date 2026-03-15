@@ -15,7 +15,7 @@
 ### 3D場景的基礎
 
 - 基礎的要素：物體、光源、材質與攝影機
-    ![](/media/imgur/BH4NbuH.png)
+    ![](https://i.imgur.com/BH4NbuH.png)
     - 基礎幾何形狀
         - 平面 plane()
         - 長方體 box()
@@ -100,9 +100,9 @@
     ```
 
 ## 範例練習
-![](/media/imgur/xKc9Kfb.png)
+![](https://i.imgur.com/xKc9Kfb.png)
 https://www.openprocessing.org/sketch/951952
-![](/media/imgur/53iTe7E.jpg)
+![](https://i.imgur.com/53iTe7E.jpg)
 https://www.openprocessing.org/sketch/951712
 
 ## 課後練習
@@ -111,29 +111,29 @@ https://www.openprocessing.org/sketch/951712
 - 練習做使用3D物件來遊戲
 
 ## 參考範例與補充資料
-![](/media/imgur/ZhN32Cl.jpg)
+![](https://i.imgur.com/ZhN32Cl.jpg)
 https://threejs.org/
-![](/media/imgur/9HQ28o2.png)
+![](https://i.imgur.com/9HQ28o2.png)
 https://moments.epic.net/#lion
-![](/media/imgur/X620dSw.png)
+![](https://i.imgur.com/X620dSw.png)
 https://www.openprocessing.org/sketch/886850
-![](/media/imgur/wEcicvJ.png)
+![](https://i.imgur.com/wEcicvJ.png)
 https://www.openprocessing.org/sketch/881611
-![](/media/imgur/QfMqbJy.png)
+![](https://i.imgur.com/QfMqbJy.png)
 https://www.openprocessing.org/sketch/892128
-![](/media/imgur/CANyunj.jpg)
+![](https://i.imgur.com/CANyunj.jpg)
 https://www.openprocessing.org/sketch/859999
-![](/media/imgur/YwOOoZz.png)
+![](https://i.imgur.com/YwOOoZz.png)
 http://madebyevan.com/webgl-water/
-![](/media/imgur/Ez1G4AT.jpg)
+![](https://i.imgur.com/Ez1G4AT.jpg)
 https://guccidive.gucci.com/
 
-![](/media/imgur/WD3LGMk.png)
+![](https://i.imgur.com/WD3LGMk.png)
 https://bruno-simon.com/
 
-![](/media/imgur/V9sIQWt.jpg)
+![](https://i.imgur.com/V9sIQWt.jpg)
 http://www.simonreeves.com/projects/db5/
-![](/media/imgur/rA879Vr.png)
+![](https://i.imgur.com/rA879Vr.png)
 http://hands.wtf/
 - http://anubis4d.xyz/proyectos/cursos/P5-clase-17.html
 - https://0xzx.com/202004281332610723.html
