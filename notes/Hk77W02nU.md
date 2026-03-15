@@ -170,15 +170,15 @@ drawingContext.shadowBlur = 20
 
 取得中心頻率的操作
 https://www.openprocessing.org/sketch/909131
-![](https://i.imgur.com/crrgbOG.gif =500x)
+![](/media/imgur/crrgbOG.gif =500x)
 
 頻譜取得與操作
 https://www.openprocessing.org/sketch/909141
-![](https://i.imgur.com/50K0ede.gif =500x)
+![](/media/imgur/50K0ede.gif =500x)
 
 影片的像素操作
 https://www.openprocessing.org/sketch/909161
-![](https://i.imgur.com/aTR3gOl.gif =500x)
+![](/media/imgur/aTR3gOl.gif =500x)
 
 追蹤顏色
 https://www.openprocessing.org/sketch/909178
@@ -201,25 +201,25 @@ https://www.openprocessing.org/sketch/909178
 - 用你的聲音做遊戲互動
 
 ## 作品範例
-![](https://i.imgur.com/3AXQYnM.png)
+![](/media/imgur/3AXQYnM.png)
 p5.FFT 分析聲音頻率的分量
 
-![](https://i.imgur.com/eSMIBmR.png)
+![](/media/imgur/eSMIBmR.png)
 https://paperplanes.world/
 
 https://experiments.withgoogle.com/collection/chrome
 
-![](https://i.imgur.com/qFV5Lwo.png)
+![](/media/imgur/qFV5Lwo.png)
 https://musiclab.chromeexperiments.com/Song-Maker/
 
-![](https://i.imgur.com/c7DcaxC.jpg)
+![](/media/imgur/c7DcaxC.jpg)
 https://forest-mt.seekrtech.com/
 
-![](https://i.imgur.com/SCif39Q.jpg)
+![](/media/imgur/SCif39Q.jpg)
 https://jayweeks.com/medusae/
 
 http://wiki.polyfra.me/#
-![](https://i.imgur.com/gkZVJG7.jpg)
+![](/media/imgur/gkZVJG7.jpg)
 
 **課程素材僅供教學，不提供其他商業用途**
 ---

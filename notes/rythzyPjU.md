@@ -17,7 +17,7 @@
 ### DOM（Document Object Model, 文件物件模型）超快速介紹
 - DOM 是什麼？
     - DOM 是一個樹狀的文件結構，藉由一層一層包覆的結構把網頁的內容架構起來。如果你在 Chrome 瀏覽器中點擊右鍵，選擇`檢查`的話，就會靠看到很多個用 `<>...</>` 包覆起來的資料，他們分別都是一個 DOM 元素，也是網頁的組成基礎喔 🐜。
-    ![Document Object Model](https://i.imgur.com/7dntYLV.png)
+    ![Document Object Model](/media/imgur/7dntYLV.png)
 - DOM 可以幹嘛？
     - 除了最基礎的呈現資訊外， HTML 內建的 DOM 元件也包含了許多我們會與使用者互動的元素，如輸入框、選單、表單等，此外如果是網頁工程師，也很常會對 DOM 元素進行更改，以達到資訊更新、動畫呈現的目的。
 
@@ -62,11 +62,11 @@
 
 ## 範例練習
 [DOM 操作練習](https://www.openprocessing.org/sketch/901354)
-![](https://i.imgur.com/1v5orco.gif)
+![](/media/imgur/1v5orco.gif)
 
 
 [彈彈文字與圖片變化](https://www.openprocessing.org/sketch/901354)
-![](https://i.imgur.com/NTTGkGm.gif)
+![](/media/imgur/NTTGkGm.gif)
 
 ## 內容回顧
 
@@ -114,22 +114,22 @@ MDN css
 1:01 右鍵->檢查水母
 
 ## 案例參考
-![](https://i.imgur.com/eSMIBmR.png)
+![](/media/imgur/eSMIBmR.png)
 https://paperplanes.world/
 
 https://experiments.withgoogle.com/collection/chrome
 
-![](https://i.imgur.com/qFV5Lwo.png)
+![](/media/imgur/qFV5Lwo.png)
 https://musiclab.chromeexperiments.com/Song-Maker/
 
-![](https://i.imgur.com/c7DcaxC.jpg)
+![](/media/imgur/c7DcaxC.jpg)
 https://forest-mt.seekrtech.com/
 
-![](https://i.imgur.com/SCif39Q.jpg)
+![](/media/imgur/SCif39Q.jpg)
 https://jayweeks.com/medusae/
 
 http://wiki.polyfra.me/#
-![](https://i.imgur.com/gkZVJG7.jpg)
+![](/media/imgur/gkZVJG7.jpg)
 
 
 **課程素材僅供教學，不提供其他商業用途**

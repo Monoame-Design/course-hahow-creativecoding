@@ -130,16 +130,16 @@ class Fish{
 ## 範例練習
 
 [讀取圖片繪製魚群與水母](https://www.openprocessing.org/sketch/906781)
-![](https://i.imgur.com/iUrPM1r.gif)
+![](/media/imgur/iUrPM1r.gif)
 
 [結合物件導向與圖片操作](https://www.openprocessing.org/sketch/906787)
-![](https://i.imgur.com/QQAKcz1.gif)
+![](/media/imgur/QQAKcz1.gif)
 
 [圖片的像素操作與重新繪製](https://www.openprocessing.org/sketch/906798)
-![](https://i.imgur.com/7Y6uL8F.gif)
+![](/media/imgur/7Y6uL8F.gif)
 
 [聲音的使用與使用者互動播放](https://www.openprocessing.org/sketch/906080)
-![](https://i.imgur.com/5TiFrml.gif)
+![](/media/imgur/5TiFrml.gif)
 
 
 
@@ -172,24 +172,24 @@ class Fish{
 
 ## 參考範例
 
-![](https://i.imgur.com/gpjGcLm.jpg)
+![](/media/imgur/gpjGcLm.jpg)
 https://www.pinterest.com/search/pins/?q=collage%20art&rs=typed&term_meta[]=collage%7Ctyped&term_meta[]=art%7Ctyped
 
-![](https://i.imgur.com/NoAL7xt.png)
+![](/media/imgur/NoAL7xt.png)
 https://www.youtube.com/watch?v=zHS0Oq15ceA
 vibertthio.com/beact-client
 
-![](https://i.imgur.com/2682o3p.jpg)
+![](/media/imgur/2682o3p.jpg)
 https://indieground.net/blog/30-images-wonderfully-ruined-by-glitch-artists/
 
-![](https://i.imgur.com/KLnkF95.jpg)
+![](/media/imgur/KLnkF95.jpg)
 
 http://satyarth.me/articles/pixel-sorting/
 
-![](https://i.imgur.com/opo6kOY.png)
+![](/media/imgur/opo6kOY.png)
 https://www.instagram.com/p/CADtGmrI0Ce/
 
-![](https://i.imgur.com/IjvJ27Z.jpg)
+![](/media/imgur/IjvJ27Z.jpg)
 https://www.instagram.com/p/B-zFkkjHFSg/
 
 **課程素材僅供教學，不提供其他商業用途**
