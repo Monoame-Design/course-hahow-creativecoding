@@ -91,9 +91,8 @@ export default {
         : notesList.classList.add("list-active");
     },
     updateContent(hash) {
-      axios.get(`https://hackmd.io/@ankycheng/${hash}/download`).then(res => {
-        // console.log(res);
-        this.md = res.data;
+      fetch(`/notes/${hash}.md`).then(res => res.text()).then(data => {
+        this.md = data;
         // this.chapterNo = this.chapterList.findIndex(c => c.hash === hash);
         this.chapterNo = 1*this.$route.params.chapterNo
 

@@ -1461,11 +1461,10 @@ export default {
   },
   created() {},
   mounted() {
-    axios
-      .get("https://hackmd.io/@ankycheng/creative-coding-intro/download")
-      .then(res => {
-        // console.log(res);
-        this.md = res.data;
+    fetch("/notes/creative-coding-intro.md")
+      .then(res => res.text())
+      .then(data => {
+        this.md = data;
       });
     this.getThumbnail();
   }
